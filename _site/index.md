@@ -8,6 +8,8 @@ welcomer: "hello, world"
 username: sara
 hostname: internet
 
+searchPlaceholderText: awaiting...
+
 bookmarks:
     home:
         start: "/"

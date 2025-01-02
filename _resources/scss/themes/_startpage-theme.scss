@@ -20,9 +20,10 @@
 
 // Import Font-Face(s)
 @use '../font-faces/JetBrainsMono';
+@use '../font-faces/SourceCodePro';
 
 // Background image (optional, background will be 'color-base' if not provided)
-$background-image-path: url('/_assets/backgrounds/city.png');
+$background-image-path: '/_assets/backgrounds/city.png';
 $background-image-opacity: 1;
 
 // Colors
@@ -47,11 +48,11 @@ $text-subdued: palette.$overlay1;
 $font-default: 'JetBrains Mono';
 
 // CLI Font (optional, sets a different font for the 'command line interface' searchbar)
-$font-cli: 'JetBrains Mono';
+$font-cli: 'Source Code Pro';
 
 // Drop Shadows (optional, no drop shadows will be used if none are provided)
-$dropshadow-hard: 1;
-$dropshadow-soft: 1;
+$dropshadow-hard: 0px -0.5rem 0.5rem rgba(0,0,0,0.3);
+$dropshadow-soft: 0px -0.25rem 0.25rem rgba(0,0,0,0.1);
 
 // Hover Transition (optional, no transition will play if none is provided)
 $hover-transition: all .2s ease-in-out;
