@@ -1,0 +1,9 @@
+{
+    "name": "sara's place",
+    "description": "made by sara, with love",
+    "url": "https://sarasoci.al/",
+    "pds": {
+        "home": "https://pds.sarasoci.al/",
+        "health": "https://pds.sarasoci.al/xrpc/_health/"
+    }
+}

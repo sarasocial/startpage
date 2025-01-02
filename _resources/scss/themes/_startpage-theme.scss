@@ -1,0 +1,57 @@
+/*
+    File: startpage-theme.scss
+
+        Used to configure the visual appearance of the startpage. Every variable here
+        can be changed to whatever you'd like, and any lines marked 'optional' in the
+        comments can be safely removed.
+
+        By default, the startpage uses catppuccin colors. You can use any of their
+        provided palettes, or use your own palette/custom colors with a teensy
+        bit of tinkering!
+
+        The default font is JetBrains Mono with fallbacks. You can use/add your own
+        fonts however you'd like. I usually put font files in _resources/assets/fonts
+        and font-face declaration partials in _/resources/scss/font-faces
+*/
+
+// Import Catppuccin Palette
+@use '../catppuccin/mocha' as palette;  // Options: mocha/macchiato/latte/frappe
+                                        // you can also just set your own colors :)
+
+// Import Font-Face(s)
+@use '../font-faces/JetBrainsMono';
+
+// Background image (optional, background will be 'color-base' if not provided)
+$background-image-path: url('/_assets/backgrounds/city.png');
+$background-image-opacity: 1;
+
+// Colors
+// Theme Colors
+$color-primary: palette.$lavender;
+$color-secondary: palette.$rosewater;
+$color-alt: palette.$pink;
+
+// Background Colors
+$base: palette.$crust;
+$surface1: palette.$mantle;
+$surface2: palette.$base;
+$surface3: palette.$surface0;
+$surface4: palette.$surface1;
+$surface5: palette.$surface2;
+
+// Text Colors
+$text-primary: palette.$text;
+$text-subdued: palette.$overlay1;
+
+// Default Font
+$font-default: 'JetBrains Mono';
+
+// CLI Font (optional, sets a different font for the 'command line interface' searchbar)
+$font-cli: 'JetBrains Mono';
+
+// Drop Shadows (optional, no drop shadows will be used if none are provided)
+$dropshadow-hard: 1;
+$dropshadow-soft: 1;
+
+// Hover Transition (optional, no transition will play if none is provided)
+$hover-transition: all .2s ease-in-out;
